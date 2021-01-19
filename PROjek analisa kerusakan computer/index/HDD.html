@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ANALISA HDD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script src="js/Kozuka_Gothic_Pro_OpenType_300.font.js" type="text/javascript"></script>
+<script src="js/Kozuka_Gothic_Pro_OpenType_500.font.js" type="text/javascript"></script>
+<!--[if lt IE 7]>
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">ie_png.fix('.png');</script>
+<![endif]-->
+</head>
+				
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript">						
+</script>
+
+<body id="page2">
+<!-- START PAGE SOURCE -->
+<div id="header" class="small">
+  <div class="container">
+    <ul class="nav"><li class="item1"><a href="home.html" class="current">home</a></li>
+      <li class="item2"><a href="HDD.html" >HDD</a></li>
+      <li class="item3"><a href="keyboard.html" >keyboard</a></li>
+      <li class="item4"><a href="mouse.html" >mouse</a></li>
+  <li class="item5"><a href="layar.html" >layar</a></li>
+  <li class="item6"><a href="sambungan wifi.html">sambungan wifi</a></li>
+    </ul>
+    <div class="logo-box">
+      <h1><a href="login.html"><strong>ANALISA HDD </strong></a></h1>
+      
+    </div>
+    <img src="images/it healt.png" alt="" height="195"class="png extra-img"/> </div>
+</div>
+<div id="content">
+  <div class="container">
+ <img src="images/hdd1.png" alt="center" height="200" class="png extra-img"/> 
+            <div class="top"><br>
+    <div class="indent">
+	
+      <div class="wrapper">
+        <div class="mainContent">
+         
+        <table>
+            <tr>
+                <td>  <h2>PILIH KERUSAKAN YANG DI ALAMI DI KOMPONEN HARDISK</h2> 
+                </td>
+                <td>
+                </td>
+               
+            </tr>
+            <tr>
+                <td>  <label><b>LAPTOP JATUH
+                </td>
+                <td>:
+                </td>
+                <td></b></label> <input  type="checkbox" name="hdd" value="Biasanya yang sering terjadi badsector dan bisa-bisa hardisk tidak bisa di pakai" id="Disarankan Untuk Mengganti Hardisknya" onclick="selectOnlyThis(this)" >
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label><b>LAPTOP TERDINDIH
+                </td>
+                <td>:
+                </td>
+                <td> </label><input type="checkbox"  id="Kalau Masih Bisa Di copy datanya,Cepat Backup" name="hdd" value="Sektor Disk terbentur dengan sensor pembacanya" onclick="selectOnlyThis(this)">
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td> 
+                </td>
+                <td>
+                </td>
+                <td> <button id="btn">PROSES</button>
+                </td>
+                
+            </tr>
+
+             <tr>
+                <td><label><b>========================================================
+                <br> ANALISA : <br><label id=aa />
+		</td>
+                <td>
+                </td>
+                <td> 
+                </td>
+                
+            </tr>
+<tr>
+                <td> 
+                </td>
+                <td>
+                </td>
+                <td> <button onclick='ww();' >PENEYELESIAN</button>
+                </td>
+                
+            </tr>
+<tr>
+                <td><label><b>========================================================
+                <br> PENYELESAIAN MASALAH : <br><label id=dd />
+		</td>
+                <td>
+                </td>
+                <td> 
+                </td>
+                
+            </tr>
+            
+        </table>
+
+                    <center><blink><b><i><h4></h4></center></blink></b></i>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <div class="inside">
+      <div class="wrapper">
+        <div class="fleft">Desinged By Express</div>
+        <div class="fright">copyleft &copy; 2021 STIKOM PGRI BANYUWANGI.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END PAGE SOURCE -->
+<script>
+var vh='';
+function selectOnlyThis(id){
+ vh=id.id;
+  var boxx = document.getElementsByName("hdd");
+  Array.prototype.forEach.call(boxx,function(el){
+    el.checked = false;
+  });
+  id.checked = true;}
+function getSelectedCheckboxValues(name) {
+const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);	
+let values = [];
+checkboxes.forEach((checkbox) => {
+values.push(checkbox.value);});
+return values;}
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', (event) =>{
+document.getElementById('aa').innerHTML='';
+document.getElementById('aa').innerHTML=getSelectedCheckboxValues('hdd');});
+function ww(){document.getElementById('dd').innerHTML=vh;}
+</script>
+</html>
