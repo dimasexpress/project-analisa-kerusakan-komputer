@@ -79,7 +79,7 @@
                 </td>
                 <td>
                 </td>
-                <td> <button id="btn">PROSES</button>
+                <td> <button id="btn">PROSES</button> <input type="button" onclick="op();"  value="ooo">
                 </td>
                 
             </tr>
@@ -148,16 +148,19 @@ function selectOnlyThis(id){
     el.checked = false;
   });
   id.checked = true;}
-function getSelectedCheckboxValues(name) {
+/*function getSelectedCheckboxValues(name) {
 const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);	
 let values = [];
 checkboxes.forEach((checkbox) => {
 values.push(checkbox.value);});
-return values;}
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', (event) =>{
-document.getElementById('aa').innerHTML='';
-document.getElementById('aa').innerHTML=getSelectedCheckboxValues('hdd');});
-function ww(){document.getElementById('dd').innerHTML=vh;}
+return values;}*/
+
 </script>
+<script src="ff.js"> </script>
+<script>const btn = document.querySelector('#btn');
+  btn.addEventListener('click', (event) =>{
+  document.getElementById('aa').innerHTML='';
+  document.getElementById('aa').innerHTML=getSelectedCheckboxValues('hdd');});
+  function ww(){document.getElementById('dd').innerHTML=vh;}</script>
+
 </html>
